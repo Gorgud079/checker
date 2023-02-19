@@ -11,6 +11,8 @@ for dir in os.listdir():
         for file in os.listdir():
             if file.endswith('.mp4'):
                 collection_dir1 = '../total/part1'
+                if not os.path.exists(collection_dir1):
+                    os.mkdir(collection_dir1)
                 shutil.copy2(file, collection_dir1)
                 counter += 1
         os.chdir('..')
@@ -20,6 +22,8 @@ for dir in os.listdir():
         for file in os.listdir():
             if file.endswith('.mp4'):
                 collection_dir2 = '../total/part2'
+                if not os.path.exists(collection_dir2):
+                    os.mkdir(collection_dir2)
                 shutil.copy2(file, collection_dir2)
                 counter += 1
         os.chdir('..')
