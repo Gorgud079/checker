@@ -1,0 +1,1 @@
+I have two folders with different files in it (besides video files, there are sites and folders with archives). The task is to copy only video files to another folder for comfortable use.
